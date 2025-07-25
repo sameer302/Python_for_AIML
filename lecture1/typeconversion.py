@@ -4,7 +4,7 @@
 '''
 a = 2
 b = 2.5
-print(a+b) # a is implicitly typecasted to 2.0
+print(a+b) # a is implicitly converted to 2.0
 
 c = "5"
 d = 5

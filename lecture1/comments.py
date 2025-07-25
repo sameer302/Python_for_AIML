@@ -11,5 +11,3 @@ sure
 '''
 
 print("my name is anthony gonsalvis")
-
-# 47:18
