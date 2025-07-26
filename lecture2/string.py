@@ -75,4 +75,3 @@
 # print(str.count("a"))
 # print(str.count("zameen"))
 
-# 28:10
