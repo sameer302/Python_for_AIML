@@ -17,7 +17,7 @@
 # finalstr = str1 + str2
 # print(finalstr)
 
-# # length function
+# length function
 # str1 = "sam"
 # len1 = len(str1)
 # print(len1)
@@ -42,6 +42,7 @@
 # print(str2[5:len(str2)])
 # print(str2[5:]) # equivalent to str2[5:len(str2)]
 # print(str2[:5]) # equivalent to str2[0:5]
+# print(str2[:]) # equivalent to str2
 
 # # negative slicing
 # str = "apple"
@@ -49,7 +50,6 @@
 # print(str[-5:]) # here we can't write str[-5:0] or str[-5:len(str)]
 # print(str[:-1]) 
 # print(str[-len(str):-1])
-# print(str[:]) # equivalent to str
 # negative indexing works only for slicing and not in general
 
 # # string functions
@@ -65,6 +65,7 @@
 
 # str = "hai apna dil toh awara"
 # print(str.replace("a","o"))
+# print(str) # original string not modified
 # print(str.replace("apna","tera"))
 
 # str = "toota toota ek parinda aise toota"
@@ -74,4 +75,3 @@
 # str = "taare zameen par"
 # print(str.count("a"))
 # print(str.count("zameen"))
-

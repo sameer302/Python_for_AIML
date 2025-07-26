@@ -27,7 +27,8 @@
 # print("end of code")
 
 # we should have at least one if at the starting before using elif
-# above we can also use if instead of all elif but the difference between both is that, in case of if, the condition will always be checked while in case of elif, the condition is checked only if the previous if or elif condition was false.
+# above we can also use if instead of all elif but the difference between both is that, in case of if, the condition will always be checked while in case of elif, 
+# the condition is checked only if the previous if or elif condition was false.
 # else condition should always be at the last and can be used only once while if and elif can be used any number of times.
 
 
@@ -37,7 +38,7 @@
 #     grade = "A"
 # elif(marks >= 80):
 #     grade = "B"
-# elif(marks >= 70 and marks < 80):
+# elif(marks >= 70):
 #     grade = "C"
 # else:
 #     grade = "D"
@@ -47,12 +48,12 @@
 
 
 # nesting of conditional statements
-marks = 40
-if(marks >= 50):
-    if(marks >= 100):
-        print("invalid marks")
-    else:
-        print("passed")
-else:
-    print("fail")
+# marks = 40
+# if(marks >= 50):
+#     if(marks >= 100):
+#         print("invalid marks")
+#     else:
+#         print("passed")
+# else:
+#     print("fail")
 
