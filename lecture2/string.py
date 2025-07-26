@@ -60,6 +60,7 @@
 # str = "i am a good boy"
 # print(str.capitalize())
 # print(str) # these functions create a new string and not modify the original string
+# strings are immutable
 # str = str.capitalize()
 # print(str)
 
