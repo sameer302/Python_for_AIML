@@ -5,7 +5,13 @@
 # print(marks[2])
 # print(len(marks))
 
+# list = []
+# print(type(list))
+# print(list)
 
+# numbers = [1]
+# print(numbers)
+# print(type(numbers))
 
 # list can store elements of different types like integers, float, string. etc.
 # student = ["sameer", 99.9, 23, "Akola"]
@@ -21,6 +27,8 @@
 # print(student)
 # print("student name is:",student[0])
 # print(student[4]) # gives error list index out of range
+# str = "sameer"
+# print(str[6]) # gives error string index out of range
 
 
 
@@ -46,9 +54,34 @@
 # and this method does not return anything
 
 # by default sorting is ascending but for descending sorting,
-list = [8,3,5,9,1]
-list.sort(reverse=True)
-print(list)
+# list = [8,3,5,9,1]
+# list.sort(reverse=True)
+# print(list)
 
 # sorting is also applicable on list of strings or characters.
-# work on the above point, 18:38
+# list = ["z","f","y","q"]
+# list.sort()
+# print(list)
+
+# sorting is not applicable when list contains strings and numbers both
+# list = ["a","b",1,2]
+# list.sort()
+# print(list) # error : '<' not supported between instances of 'int' and 'str'
+
+# list = [1,2,3,4,5]
+# list.reverse()
+# print(list)
+
+# list = [1,2,3]
+# list.insert(1,5)
+# print(list)
+
+# list = [1,2,3,1,2,1]
+# list.remove(1) # removes first occurence of the entered element
+# print(list)
+
+# list = [1,2,3,4,5]
+# list.pop(2) # removes element at the given index
+# print(list)
+
+# we can go to official python documentation to look for more methods related to lists, strings or tuples

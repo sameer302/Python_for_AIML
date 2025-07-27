@@ -3,6 +3,9 @@
 # str3 = '''sam'''
 # # why three different representations ?
 # reason = "apostrophe, that's it!"
+# str = ""
+# print(type(str))
+# print(str)
 
 # # escape sequence characters - used for formatting text - e.g. tab, new line, carriage return, etc.
 # str = "let's try escape sequence\nright now!"
@@ -38,6 +41,7 @@
 # str = "sameer"
 # print(str[0:3])
 # print(str[3:6])
+# print(str[5:2]) # no output printed
 # str2 = "superstar"
 # print(str2[5:len(str2)])
 # print(str2[5:]) # equivalent to str2[5:len(str2)]
