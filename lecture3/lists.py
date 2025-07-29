@@ -37,6 +37,9 @@
 # difference between functions and methods is, functions are general purpose with respect to data type but methods are special functions 
 # which can be applied only to a specific data type for example list methods or string methods, etc.
 
+
+
+
 # List Methods
 
 # modifying or updating list is also called as mutating list
@@ -50,8 +53,8 @@
 # print(list)
 
 # when we use string.capitalize(), the original string is not modified and instead a new string literal is created or we can say the capitalize() 
-# method returns a new string literal and it is printed, but when we use list.sort() then the original list is sorted and the previous order of values is lost 
-# and this method does not return anything
+# method returns a new string literal and it is printed, but when we use list.sort() then the original list is sorted and the previous order of values 
+# is lost and this method does not return anything
 
 # by default sorting is ascending but for descending sorting,
 # list = [8,3,5,9,1]
@@ -60,7 +63,7 @@
 
 # sorting is also applicable on list of strings or characters.
 # list = ["z","f","y","q"]
-# list.sort()
+# list.sort() # sorting in ascending order of unicode values
 # print(list)
 
 # sorting is not applicable when list contains strings and numbers both
@@ -83,5 +86,9 @@
 # list = [1,2,3,4,5]
 # list.pop(2) # removes element at the given index
 # print(list)
+
+# when we apply a method on any data type variable then either the method modifies the variable and returns None or it will create a new variable of the
+# the same data type with the modifications and return this new variable without affecting the original variable. for e.g., string.capitalize() 
+# or string.replace() will return a new string but list.append() will modify the original list
 
 # we can go to official python documentation to look for more methods related to lists, strings or tuples

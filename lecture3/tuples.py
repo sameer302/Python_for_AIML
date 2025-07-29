@@ -6,16 +6,16 @@
 # tup[0] = 5 # error : 'tuple' object does not support item assignment
 
 # tup = ()
-# print(type(tup))
-# print(tup)
+# print(type(tup)) # output will be <class 'tuple'>
+# print(tup) # output will be ()
 
 # tup = (1)
-# print(tup)
-# print(type(tup)) # here tup will be treated as an int variable
+# print(tup) #output will be 1
+# print(type(tup)) # output will be <class 'int'>
 
 # tup = (1,)
-# print(tup)
-# print(type(tup)) # here tup will be treated as tuple
+# print(tup) # output will be (1,)
+# print(type(tup)) # output will be <class 'tuple'>
 
 # hence for single element tuples we should always end it with ,
 # for multiple elements adding , is optional
@@ -26,8 +26,8 @@
 
 # Methods in tuples
 
-# tup = (1,4,2,6,8,2,3,2)
-# print(tup.index(8))
+# tup = (1,4,2,6,8,2,3,2,8)
+# print(tup.index(8)) # returns index of the first occurence of the element
 
 # tup = (1,2,3,2,4,2,5,2)
 # print(tup.count(2))

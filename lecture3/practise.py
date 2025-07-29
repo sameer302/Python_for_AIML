@@ -4,7 +4,7 @@
 # movie1 = input("enter name of first movie: ")
 # movie2 = input("enter name of second movie: ")
 # movie3 = input("enter name of third movie: ")
-# list = [m1,m2,m3]
+# list = [movie1,movie2,movie3]
 # print(list)
 
 # Alternative to above code
@@ -37,9 +37,16 @@
 # else:
 #     print("not a palindrome!")
 
-# here the reason we use copy method instead of directly assigning one list to other is that when we assign one list to another then two references are created for the 
-# same list and so if we do some changes using any reference then the original list is also changed.
-# To avoid this we can use .copy method to make a soft copy of our list. This way we can modify the soft copy without affecting the original list. 
+# here the reason we use copy method instead of directly assigning one list to other is that when we assign one list to another then two references are 
+# created for the same list and so if we do some changes using any reference then the original list is also changed. To avoid this we can use .copy method 
+# to make a soft copy (or shallow copy) of our list. This way we can modify the soft copy without affecting the original list. 
+
+'''difference between shallow copy and deep copy is that, when we make a shallow copy using .copy() method, firstly only the copy of outer list/references
+is made while the inner objects remain the same so if I try to make any change in the inner objects that change will be reflected in the original 
+list as well.
+Instead if I make a deep copy by importing copy module and using copy.deepcopy() then copies of outer as well as inner references are made and so any 
+changes made to inner objects won't reflect in the original list.
+So as a summary elements in the list are actually references to objects.'''
 
 
 
@@ -52,6 +59,6 @@
 
 # Q3) Store the above values in a list & sort them from "A" to "D".
 
-list = ["C","D","A","A","B","B","A"]
-list.sort()
-print(list)
+# list = ["C","D","A","A","B","B","A"]
+# list.sort()
+# print(list)
