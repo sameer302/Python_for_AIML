@@ -1,4 +1,5 @@
 # lists, tuples, dictionaries and sets are built in data structures in python
+# dictionary are used to store key value pairs.
 
 info = {
     "name" : "sameer",
@@ -20,4 +21,3 @@ print(info)
 print(info["name"])
 print(info["subjects"])
 print(info[10])
-print()
