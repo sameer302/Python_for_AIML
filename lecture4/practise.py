@@ -53,8 +53,8 @@ Q4) Figure out a way to store 9 and 9.0 as separate values in the set
 # print(set)
 
 # solution 2)
-set = {
-    ("float",9.0),
-    ("int",9)
-}
-print(set)
+# set = {
+#     ("float",9.0),
+#     ("int",9)
+# }
+# print(set)

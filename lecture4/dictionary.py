@@ -16,7 +16,7 @@ info = {
 
 # duplicate keys not allowed
 
-# dictionary is unordered i.e. here we don't have indexing as in lists, string or tuple.
+# dictionary is unordered i.e. here we don't have indexing as in lists, string or tuple but the order of pairs remains constant.
 
 # dictionary is mutable
 
@@ -38,15 +38,15 @@ for value, any data type and structure is allowed '''
 # print(null_dict)
 
 # Nesting in dictionary
-student = {
-    "name" : "sameer",
-    "subjects" : {
-        "PHI" : 100,
-        "Signals" : 100,
-        "Communication" : 110
-    },
-    "genius" : True
-}
+# student = {
+#     "name" : "sameer",
+#     "subjects" : {
+#         "PHI" : 100,
+#         "Signals" : 100,
+#         "Communication" : 110
+#     },
+#     "genius" : True
+# }
 # print(student)
 # print(student["subjects"])
 # print(student["subjects"]["PHI"])
@@ -60,22 +60,25 @@ student = {
 
 # print(len(student))
 
-# print(student.values()) # printed as dict_values[]
-# print(list(student.values())) # printed as a list
+# print(info.values()) # printed as dict_values[]
+# print(list(info.values())) # printed as a list
 
-# print(student.items())
-# print(list(student.items()))
-# pairs = list(student.items())
+# print(info.items()) # printed as dict_items and each element is a tuple of key and value separated by comma
+# print(list(info.items())) # printed as list
+# pairs = list(info.items())
 # print(pairs[0])
 
-# print(student["name"])
-# print(student.get("name"))
+# print(info["name"])
+# print(info.get("name"))
 
 # print(student["name1"]) # throws error so gives unstable code
 # print(student.get("name1")) # returns none so gives stable code
 
-# student.update({"name" : "jack"})
-# print(student)
+
+# info.update({"name" : "jack"})
+# print(info)
 # new_dict = {"name" : "monalisa"}
-# student.update(new_dict)
-# print(student)
+# info.update(new_dict)
+# print(info)
+# info["name"] = "charlie"
+# print(info)

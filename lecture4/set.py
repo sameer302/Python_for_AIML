@@ -37,14 +37,14 @@ modify the element at a particular index.
 # collection.add((1,2,3))
 # collection.add(12.34)
 # print(collection)
-# collection.add([1,2,3])
+# collection.add([1,2,3]) # error: unhashable type: 'list'
 
 '''
 hashable elements = immutable elements e.g., string, tuple
 unhashable elements = mutable elements e.g., list, set, dictionary
 '''
-
-# collection.remove(12.34)
+collection = {12.34, 12.34, "sameer",55}
+# collection.remove(12.34) # removes all instances of 12.34
 # print(collection)
 
 # collection.clear()
@@ -54,9 +54,9 @@ unhashable elements = mutable elements e.g., list, set, dictionary
 # print(collection.pop())
 # print(collection.pop()) # returns random values
 
-set1 = {1,2,3}
-set2 = {2,3,4}
-print(set1.union(set2)) # just like union of sets in maths
-print(set1) # no change
-print(set2) # no change
-print(set1.intersection(set2)) # just like intersection in maths
+# set1 = {1,2,3}
+# set2 = {2,3,4}
+# print(set1.union(set2)) # just like union of sets in maths
+# print(set1) # no change
+# print(set2) # no change
+# print(set1.intersection(set2)) # just like intersection in maths
