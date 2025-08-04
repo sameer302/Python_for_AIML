@@ -47,7 +47,7 @@
 
 # print("some useful work")
 
-for el in range(10):
-    pass
+# for el in range(10):
+#     pass
 
-print("some useful work")
+# print("some useful work")

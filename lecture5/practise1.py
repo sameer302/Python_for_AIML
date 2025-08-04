@@ -47,4 +47,5 @@ i = 0
 while i<len(tup): # traversing tuple
     if(tup[i] == 49):
         print("found at index",i)
+        break
     i += 1
