@@ -2,7 +2,7 @@
 # loops and recursion are interconvertible
 # in some cases recursion gives a simple code as compared to loops
 
-# recursuve function
+# recursive function
 # def show(n):
 #     if(n==0): # base case, present in every recursive function
 #         return

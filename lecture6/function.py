@@ -7,6 +7,8 @@
 # the above block of code is called function definition
 # calcSum(7,8) # 7,8 are arguments and this is function calling
 
+# even if we don't write return statement or just write return, in both cases it will return none
+
 # def calcMul(c,d):
 #     mul = c*d
 #     return mul
@@ -55,5 +57,5 @@
 # # calcMul() # error missing arguments
 # calcMul(5)
 
-# def calcMul(a=1,b): # non-default first default later
+# def calcMul(a=1,b): # here it will throw error since non-default first default later
 #     print(a*b)
