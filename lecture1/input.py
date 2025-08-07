@@ -7,7 +7,10 @@
 # age = int(input("enter your age: "))
 # print(type(age), age) # type casting can be used to get desired data type input
 
-name = input("enter name: ")
-age = int(input("enter age: "))
-print("Welcome", name)
-print("age", age)
+# name = input("enter name: ")
+# age = int(input("enter age: "))
+# print("Welcome", name)
+# print("age", age)
+
+name, age = input("enter name: ","enter age: ")
+# error generated as input takes only one argument
