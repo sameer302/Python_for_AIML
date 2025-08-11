@@ -2,8 +2,8 @@
 
 # f = open("practise.txt","w")
 # f.write("Hi everyone")
-# f.write("Bye everyone") # this will be appended at end of Hi everyone
-# f.write("\nwe are learning File I/O\nusing Java.\nI like programming in Java.")
+# f.write(" Bye everyone") # this will be appended at end of Hi everyone
+# f.write("\nWe are learning File I/O\nusing Java.\nI like programming in Java.")
 # f.close()
 
 ##########################################################################
@@ -19,9 +19,7 @@
 #     with open("practise.txt","w") as f:
 #         f.write(data)
 
-# word1 = input("enter the word to replace: ")
-# word2 = input("enter the replacement : ")
-# replace(word1, word2)
+# replace("Java", "Python")
 
 #######################################################################
 
@@ -40,7 +38,7 @@
 
 # Q4) WAF to find in which line of the code does the word "learning" occur first. Print -1 if word not found.
 
-# word = "pyq"
+# word = "learning"
 # def find_line():
 #     with open("practise.txt","r") as f:
 #         line = True
@@ -66,7 +64,7 @@
 # count = 0
 # for char in data:
 #     if(char == ","):
-#         if(int(num)%2 == 0):
+#         if(int(num)%2 == 0): # here even though num will contain some empty space still it can be converted to int
 #             count += 1
 #         num = ""
 #     else:
@@ -81,7 +79,8 @@
 
 # count = 0
 # nums = data.split(",")
-# print(nums)
+# print(nums) # here the elements will have space also if there was space in data file but as each element gets converted to int for comparison
+# # hence it wont make a difference
 # for val in nums:
 #     if(int(val) % 2 == 0):
 #         count += 1
@@ -91,5 +90,5 @@
 # str = " 23 "
 # print(int(str)) # here space character won't make any problem but any other character will make a problem
 
-str = "2a"
-print(int(str)) # error invalid literal for int
+# str = "2a"
+# print(int(str)) # error invalid literal for int

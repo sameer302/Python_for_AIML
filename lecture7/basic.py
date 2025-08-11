@@ -19,6 +19,9 @@
 # print(data)
 # print(type(data))
 
+# data1 = f.read()
+# print(data1) # nothing will be printed as cursor it at the end
+# print(type(data1))
 
 # import os
 # print(os.getcwd()) 
@@ -30,7 +33,7 @@
 # line1 = f.readline()
 # print(line1)
 '''we will get extra line after line1 is printed this is because in the text file
-as we pressed enter to write in next line so by default there a newline character \next
+as we pressed enter to write in next line so by default there a newline character \n 
 is added which is not directly visible but it is present and also read hence we get
 a new line'''
 
@@ -51,10 +54,13 @@ after using read() then we need to close the file and open it again'''
 # f.close()
 
 # f = open("demo.txt","w")
-# f.write("Data ud gaya bhai;)")
+# print(f.read()) # will give error as file is not opened in read mode
+# f.write("D") # even if we write a single character and there are many characters already in the file, then also firstly complete data will
+# be removed and then the new data will be written
 
 # f = open("demo.txt","a")
-# f.write("Ab nahi udega!:)")
+# print(f.read()) # will give error as file is not opened in read mode
+# f.write(" Ab nahi udega!:)")
 # f.write("\nnext line me likhega ab")
 
 # f = open("sample.txt","r") # error: file not found
@@ -64,11 +70,11 @@ after using read() then we need to close the file and open it again'''
 
 
 # f = open("demo.txt","r+") # combined mode, both read and write
-# f.write("tata") # here the pointer starts from the first character and then it updates the data
+# f.write("A ") # here the pointer starts from the first character and then it updates the data
 # # sequentially without overwriting the complete file as "w"
-# print(f.read()) # the printing will start from where the pointer is present currently
+# print(f.read()) # the printing will start from where the pointer is present currently i.e. where the last character was written
 
-# f = open("demo.txt","w+") # opens the file in truncated form i.e. all data is wiped up
+# f = open("demo.txt","w+") # this is also combined mode both read and write, opens the file in truncated form i.e. all data is wiped up
 # print(f.read()) # empty line is printed
 # f.write("abc") # abc is written
 # print(f.read()) # nothing is printed as now the pointer is at the end
@@ -77,7 +83,7 @@ after using read() then we need to close the file and open it again'''
 
 # f = open("demo.txt","a+") # combined mode both read and append
 # print(f.read()) # nothing printed as pointer is at the end
-# f.write("abc") # abc appended at the end so the final text in file is abcabc
+# f.write(" abc") # abc appended at the end
 # print(f.read()) # nothing is printed as pointer is at the end
 # f.seek(0)
 # print(f.read())
@@ -94,8 +100,10 @@ after using read() then we need to close the file and open it again'''
 # os.remove("sample1.txt")
 
 # f = open("sample.txt","w")
+# f.close()
 
-import os
-os.remove("sample.txt") # cross aayega filename pe
+# import os
+# os.remove("sample.txt") # cross aayega filename pe
+# we can remove a file only if it is closed but if its open then we cannot close it.
 
 # f.close()
