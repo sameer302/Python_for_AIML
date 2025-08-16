@@ -15,6 +15,9 @@
 # college = College()
 # print(college.name, college.rank) # printed as two separate values, not as a tuple
 
+
+
+
 # class Laptop:
 #     # default constructor
 #     def __init__(self, price):
@@ -57,28 +60,28 @@
 
 # ANOTHER WAY OF HANDLINE THE ABOVE SCENARIO
 
-class Laptop:
+# class Laptop:
 
-    def __init__(self, *args): 
-        if(len(args) == 0):
-            print("initialized with no argument")
-        elif(len(args) == 1):
-            print("initialized with one argument")
-            self.name = args[0]
-        else:
-            print("initialized with two arguments")
-            self.name = args[0] # here it will create a name attribute and assign it the given value
-            self.model = args[1] # here it will create model attribute and assign it the passed value
+#     def __init__(self, *args): 
+#         if(len(args) == 0):
+#             print("initialized with no argument")
+#         elif(len(args) == 1):
+#             print("initialized with one argument")
+#             self.name = args[0]
+#         else:
+#             print("initialized with two arguments")
+#             self.name = args[0] # here it will create a name attribute and assign it the given value
+#             self.model = args[1] # here it will create model attribute and assign it the passed value
 
-l1 = Laptop("Dell", "G3 15")
-print(l1.name)
-print(l1.model)
+# l1 = Laptop("Dell", "G3 15")
+# print(l1.name)
+# print(l1.model)
 
-l2 = Laptop("Asus")
-print(l2.name) 
+# l2 = Laptop("Asus")
+# print(l2.name) 
 
-l3 = Laptop()
-print(l3)
+# l3 = Laptop()
+# print(l3)
 
 ''' 
 *args lets you pass any number of positional arguments to a function or method.
@@ -109,6 +112,9 @@ def show_info(**kwargs):
 
 '''
 
+
+
+
 # class Student:
 #     college = "IITB" # class attribute, stored only once in memory
 
@@ -123,6 +129,10 @@ def show_info(**kwargs):
 # print(s1.college)
 
 # print(Student.college)
+
+
+
+
 
 # a class contains two main components, data(attributes) and methods(functions)
 
@@ -151,6 +161,7 @@ def show_info(**kwargs):
 
 # s1 = Student()
 # s1.hello()
+
 
 
 
