@@ -3,10 +3,10 @@
 #         self.name = name
 
 # s1 = Student("sam")
-# print(s1)
+# print(s1) # <__main__.Student object at 0x000001A9A8826A50>
 
 # del s1
-# print(s1)
+# print(s1) # name 's1' is not defined
 
 # s2 = Student("jack")
 # print(s2)
@@ -14,7 +14,7 @@
 
 # del s2.name
 # print(s2)
-# # print(s2.name)
+# print(s2.name) # 'Student' object has no attribute 'name'
 
 # s3 = Student("cash")
 # print(s3)
@@ -40,7 +40,7 @@
 
 # acc1 = Account(12345, "abc12")
 # print(acc1.acc_no)
-# print(acc1.__acc_pwd)
+# print(acc1.__acc_pwd) # 'Account' object has no attribute '__acc_pwd'
 
 
 # class Account:
@@ -56,14 +56,6 @@
 # acc1.show_pwd()
 
 
-# class Person:
-#     __name = "anonymous"
-
-#     def __hello(self): # even methods can be made private
-#         print(self.__name)
-
-# p1 = Person
-# print(p1.__name) # error: no attribute __name
 
 
 # class Person:
@@ -73,17 +65,24 @@
 #         print(self.__name)
 
 # p1 = Person
-# p1.__hello() # error: no attribute __hello
+# p1.__hello() # type object 'Person' has no attribute '__hello'
+# print(p1.__name) # type object 'Person' has no attribute '__name'
+
+
+
 
 
 # class Person:
 #     __name = "anonymous"
+#     __age = 23
 
-#     def __hello(self): # even methods can be made private
+#     def __hello(self): 
 #         print(self.__name)
 
 #     def welcome(self):
-#         self.__hello()
+#         self.__hello() # accessing private method
+#         print(self.__age) # accessing private variable
+
 
 # p2 = Person()
 # p2.welcome()
@@ -99,7 +98,7 @@
 # class Car: # Base class
 #     wheels = 4
 
-#     @staticmethod # we can only access static method from an derived class object
+#     @staticmethod
 #     def start():
 #         print("car started")
 
@@ -197,7 +196,6 @@
 
 
 
-
 # class Person:
 #     name = "anonymous"
 
@@ -267,7 +265,7 @@
 # print(s1.average)
 # s1.phy = 91
 # print(s1.phy)
-# print(s1.average)
+# print(s1.average) # same average as before is printed
 
 
 # class Student:
@@ -287,7 +285,7 @@
 # s1.phy = 91
 # print(s1.phy)
 # s1.calcAverage()
-# print(s1.average)
+# print(s1.average) # updated average will be printed now
 
 
 # class Student:
