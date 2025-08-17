@@ -1,3 +1,7 @@
+''' We need high-level languages because they offer **greater abstraction, performance, and flexibility** than scripting languages. 
+While scripting is ideal for automating system tasks, high-level languages enable **complex logic, data structures, cross-platform development, 
+and direct hardware interaction**. They’re essential for building scalable applications, optimizing performance, and leveraging rich ecosystems of
+libraries and tools.'''
 print("hello world!")
 print("Sameer the king!")
 print("My name is Sameer", "My bro is idiot")
