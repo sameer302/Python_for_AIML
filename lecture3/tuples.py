@@ -18,7 +18,7 @@
 # print(type(tup)) # output will be <class 'tuple'>
 
 # hence for single element tuples we should always end it with ,
-# for multiple elements adding , is optional
+# for multiple elements adding , after the last element is optional
 # this does not happen in case of lists as in case of tuples we are using () which is also generally used to enclose normal expressions in python. 
 # But the [] are not generally used in python and we use them only when we want to make a list.
 

@@ -37,18 +37,67 @@
 # else:
 #     print("not a palindrome!")
 
-# here the reason we use copy method instead of directly assigning one list to other is that when we assign one list to another then two references are 
-# created for the same list and so if we do some changes using any reference then the original list is also changed. To avoid this we can use .copy method 
-# to make a soft copy (or shallow copy) of our list. This way we can modify the soft copy without affecting the original list. 
+'''
+🔑 Summary: Variable Assignment & Object Mutability in Python
+
+**Immutable Objects** (e.g., `int`, `float`, `str`, `tuple`)
+- **Assignment**: Creates a new reference to the same object.
+- **Modification**: Triggers creation of a **new object**.
+- **Effect**: Original variable remains unchanged.
+
+```python
+x = 5
+y = x
+y += 1  # y now points to a new object (6), x is still 5
+```
+
+---
+
+**Mutable Objects** (e.g., `list`, `dict`, `set`)
+- **Assignment**: Creates a new reference to the **same object**.
+- **Modification**: Changes the object **in place**.
+- **Effect**: All references reflect the change.
+
+```python
+a = [1, 2]
+b = a
+b.append(3)  # a is now [1, 2, 3] too
+```
+
+---
+
+Best Practices
+- Use `.copy()` or `copy.deepcopy()` to avoid unintended shared references with mutable objects.
+- Use `id()` to inspect whether two variables point to the same object.
+
+'''
 
 '''difference between shallow copy and deep copy is that, when we make a shallow copy using .copy() method, firstly only the copy of outer list/references
 is made while the inner objects remain the same so if I try to make any change in the inner objects that change will be reflected in the original 
 list as well.
 Instead if I make a deep copy by importing copy module and using copy.deepcopy() then copies of outer as well as inner references are made and so any 
 changes made to inner objects won't reflect in the original list.
-So as a summary elements in the list are actually references to objects.'''
+So as a summary elements in the list are actually references to objects.
+'''
 
+# import copy
+# original = [1, [2, 3]]
+# shallow = copy.copy(original)
+# shallow.append(4)
+# print(original)  # [1, [2, 3, 4]] → nested list is shared
+# print(shallow)
+# shallow[1].append(4)
+# print(original)
+# print(shallow)
 
+# original = [1, [2, 3]]
+# shallow = copy.deepcopy(original)
+# shallow.append(4)
+# print(original)  # [1, [2, 3, 4]] → nested list is shared
+# print(shallow)
+# shallow[1].append(4)
+# print(original)
+# print(shallow)
 
 
 # Q2) WAP to count the number of students with the "A" grade in the following tuple.
@@ -59,6 +108,8 @@ So as a summary elements in the list are actually references to objects.'''
 
 # Q3) Store the above values in a list & sort them from "A" to "D".
 
-# list = ["C","D","A","A","B","B","A"]
+# list = list(grades)
 # list.sort()
 # print(list)
+
+# Since tuples are immutable so they don't have sort or reverse method

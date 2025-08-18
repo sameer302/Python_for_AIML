@@ -13,6 +13,8 @@
 # print(numbers)
 # print(type(numbers))
 
+
+
 # list can store elements of different types like integers, float, string. etc.
 # student = ["sameer", 99.9, 23, "Akola"]
 # print(student)
@@ -46,11 +48,11 @@
 # list = [1,2,3]
 # print(list)
 # print(list.append(4)) # here append method does not return anything or we can say it returns None value
-# print(list)
+# print(list) # original list is modified
 
 # list = [4,2,5,7]
 # list.sort() # here also sort method returns None value
-# print(list)
+# print(list) # original list is modified
 
 # when we use string.capitalize(), the original string is not modified and instead a new string literal is created or we can say the capitalize() 
 # method returns a new string literal and it is printed, but when we use list.sort() then the original list is sorted and the previous order of values 
@@ -68,15 +70,15 @@
 
 # sorting is not applicable when list contains strings and numbers both
 # list = ["a","b",1,2]
-# list.sort()
-# print(list) # error : '<' not supported between instances of 'int' and 'str'
+# list.sort() # error : '<' not supported between instances of 'int' and 'str'
+# print(list) 
 
 # list = [1,2,3,4,5]
 # list.reverse()
 # print(list)
 
 # list = [1,2,3]
-# list.insert(1,5)
+# list.insert(1,5) # inserts 5 at index 1 and shifts other elements to right
 # print(list)
 
 # list = [1,2,3,1,2,1]
