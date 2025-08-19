@@ -16,7 +16,6 @@
 
 
 
-
 # Q3) print the multiplication table of a number n.
 
 # n = int(input("enter the number: "))
@@ -24,7 +23,6 @@
 # while i<=10 :
 #     print(n," * ",i," = ",n* i)
 #     i += 1
-
 
 
 
@@ -36,7 +34,6 @@
 # while i<len(list) :
 #     print(list[i])
 #     i += 1
-
 
 
 

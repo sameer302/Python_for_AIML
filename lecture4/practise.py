@@ -3,11 +3,12 @@ Q1) Store following word meanings in a python dictionary
 table : "a piece of furniture","list of facts and figures"
 cat : "a small animal"
 '''
-# dict = {
-#     "cat" : "a small animal",
-#     "table" : ["a piece of furniture","list of facts and figures"]
-# }
+dict = {
+    "cat" : "a small animal",
+    "table" : {"a piece of furniture","list of facts or figures"}
+}
 # print(dict)
+# the value for table can be stored in list, or tuple, or set.
 
 '''
 Q2) You are given a list of subjects for students. Assume one 
@@ -34,10 +35,19 @@ Use subject name as key and marks as value.
 # alternative to above
 
 # marks = {}
-# marks.update({"phy" : input("enter marks of physics: ")})
-# marks.update({"chem" : input("enter marks of chemistry: ")})
-# marks.update({"maths" : input("enter marks of mathematics: ")})
+# marks.update({"phy" : int(input("enter marks of physics: "))})
+# marks.update({"chem" : int(input("enter marks of chemistry: "))})
+# marks.update({"maths" : int(input("enter marks of mathematics: "))})
 # print(marks)
+
+# alternative to above
+
+dict = {"phy" : int(input("enter marks of physics: ")),
+        "chem" : int(input("enter marks of chemistry: ")),
+        "maths" : int(input("enter marks of mathematics: "))}
+print(dict)
+# if we have two objects with same variable name, then the variable points to the latest assignment and the previous object has no pointer now 
+
 
 '''
 Q4) Figure out a way to store 9 and 9.0 as separate values in the set

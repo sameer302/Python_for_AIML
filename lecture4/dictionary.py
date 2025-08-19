@@ -1,5 +1,5 @@
 ''' lists, tuples, dictionaries and sets are built in 
- data structures in python '''
+ classes in python '''
 
 # dictionary is collection of key value pairs
 
@@ -12,16 +12,19 @@ info = {
     10 : 96.6
 }
 # print(type(info))
-# print(info)
+# print(info) 
+# print(info.items())
+# both of the above methods print the same key value pairs but in different styles
 
 # duplicate keys not allowed
 
-# dictionary is unordered i.e. here we don't have indexing as in lists, string or tuple but the order of pairs remains constant.
+# dictionary is unordered i.e. here we don't have indexing as in lists, string or tuple.
+# So it means that we need to know the key value to access any element in dictionary.
 
 # dictionary is mutable
 
-''' we can have any immutable data type or structure as key but not mutable ones like lists or dictionary. 
-for value, any data type and structure is allowed '''
+''' we can have any immutable object as key but not mutable ones like lists or dictionary. 
+for value, any object is allowed '''
 
 # print(info["name"])
 # print(info["subjects"])
@@ -64,9 +67,9 @@ for value, any data type and structure is allowed '''
 # print(list(info.values())) # printed as a list
 
 # print(info.items()) # printed as dict_items and each element is a tuple of key and value separated by comma
-# print(list(info.items())) # printed as list
+# print(list(info.items())) # printed as list and again each element will be a tuple
 # pairs = list(info.items())
-# print(pairs[0])
+# print(pairs[0]) # prints first key, value pair as a tuple
 
 # print(info["name"])
 # print(info.get("name"))
@@ -75,10 +78,13 @@ for value, any data type and structure is allowed '''
 # print(student.get("name1")) # returns none so gives stable code
 
 
-# info.update({"name" : "jack"})
-# print(info)
-# new_dict = {"name" : "monalisa"}
-# info.update(new_dict)
-# print(info)
-# info["name"] = "charlie"
-# print(info)
+info.update({"name" : "jack"})
+print(info)
+new_dict = {"name" : "monalisa",
+            "height" : "6 feet"}
+info.update(new_dict) 
+# update method will always take a dictionary as an input and then if there is any common key then its value gets updated as per the second dict,
+# and if there is any new key : value pair, then it gets added to the first dict as it is.
+print(info)
+info["name"] = "charlie"
+print(info)

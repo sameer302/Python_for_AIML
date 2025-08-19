@@ -5,14 +5,16 @@
 
 # seq = range(5) # values from 0 to 4 stored in seq
 # print(type(seq)) # class 'range'
-# print(seq)
+# print(seq) # range(0,5) printed
+
+
 # i=0
 # while i<=4:
 #     print(seq[i])
 #     i+=1
 
 # for i in range(10): # range(stop)
-#     print(i) # ;rints from 0 to 9
+#     print(i) # prints from 0 to 9
 
 # for i in range(3,10): # range(start, stop)
 #     print(i) # prints from 3 to 9
