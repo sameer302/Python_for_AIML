@@ -104,6 +104,6 @@ after using read() then we need to close the file and open it again'''
 
 # import os
 # os.remove("sample.txt") # cross aayega filename pe
-# we can remove a file only if it is closed but if its open then we cannot close it.
+# we can remove a file only if it is closed but if its open then we cannot delete it.
 
 # f.close()

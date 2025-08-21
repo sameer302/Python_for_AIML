@@ -43,7 +43,7 @@
 #     with open("practise.txt","r") as f:
 #         line = True
 #         i = 1
-#         while line : # condition is false only when line becomes null
+#         while line : # condition is false only when line becomes null, value is truthy and empty is falsy in python
 #             line = f.readline()
 #             if(word in line):
 #                 print(i)
@@ -57,8 +57,8 @@
 
 # Q5) From a file containing numbers separated by comma, print the count of even numbers
 
-# with open("numbers.txt","r") as f:
-#     data = f.read()
+with open("numbers.txt","r") as f:
+    data = f.read()
 
 # num = ""
 # count = 0
@@ -78,9 +78,8 @@
 # alternate code
 
 # count = 0
-# nums = data.split(",")
-# print(nums) # here the elements will have space also if there was space in data file but as each element gets converted to int for comparison
-# # hence it wont make a difference
+# nums = data.split(",") # it will take it as a list of strings
+# print(nums)
 # for val in nums:
 #     if(int(val) % 2 == 0):
 #         count += 1
