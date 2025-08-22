@@ -25,26 +25,26 @@ Q1) Define a Circle clas...
 Q2) Define a Employee class with attributes role....
 '''
 
-# class Employee:
-#     def __init__(self, role, dept, salary):
-#         self.role = role
-#         self.dept = dept
-#         self.salary = salary
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
 
-#     def showDetails(self):
-#         print(f"role:{self.role}\ndept:{self.dept}\nsalary:{self.salary}")
+    def showDetails(self):
+        print(f"role:{self.role}\ndept:{self.dept}\nsalary:{self.salary}")
 
-# emp1 = Employee("intern","research","12lpa")
-# emp1.showDetails()
+emp1 = Employee("intern","research","12lpa")
+emp1.showDetails()
 
-# class Engineer(Employee):
-#     def __init__(self,name,age):
-#         super().__init__("Engineer","IT","30lpa")
-#         self.name = name
-#         self.age = age
+class Engineer(Employee):
+    def __init__(self,name,age):
+        # super().__init__("Engineer","IT","30lpa")
+        self.name = name
+        self.age = age
 
-# engg1 = Engineer("sam",23)
-# engg1.showDetails()
+engg1 = Engineer("sam",23)
+engg1.showDetails() # engg1 is an object of both classes, Employee and Engineer
 
 #####################################################################
 
@@ -52,14 +52,14 @@ Q2) Define a Employee class with attributes role....
 Q3) Create a class called order...
 '''
 
-class Order:
-    def __init__(self,item,price):
-        self.item = item
-        self.price = price
+# class Order:
+#     def __init__(self,item,price):
+#         self.item = item
+#         self.price = price
 
-    def __gt__(self, order2):
-        return self.price > order2.price
+#     def __gt__(self, order2):
+#         return self.price > order2.price
         
-ord1 = Order("vadapav",25)
-ord2 = Order("pavbhaji",75)
-print(ord1 > ord2)
+# ord1 = Order("vadapav",25)
+# ord2 = Order("pavbhaji",75)
+# print(ord1 > ord2)

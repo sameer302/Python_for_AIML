@@ -92,6 +92,8 @@ def greet(*args):
     for name in args:
         print(f"Hello, {name}!")
 
+greet("sameer", "jayesh")
+
 We can use list or tuple in place of *args but then we need to pass the arguments as a list or tuple and for no arguments we need to pass
 empty list or tuple but in case of *args, we can directly pass the arguments as normal arguments.
 
@@ -110,9 +112,9 @@ def show_info(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
+show_info(name="sam", age=23, strength = "infinite")
+
 '''
-
-
 
 
 # class Student:
@@ -121,6 +123,9 @@ def show_info(**kwargs):
 #     def __init__(self, name, marks=None):
 #         self.name = name # object attribute, stored separately in memory for each object
 #         self.marks = marks # object attribute
+#         print(college) # gives error
+#         print(self.college) # works fine
+#         print(Student.college) # works fine
 #         print("added new student to database")
 
 # s1 = Student("sameer","99")
